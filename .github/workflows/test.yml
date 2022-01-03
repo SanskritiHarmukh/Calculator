@@ -14,8 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-          #property
-          with: 
-            #I want node 14 cloned into my repository
-            node-version: '14.17.0' 
+        # property
+        with: 
+          # I want node 14 cloned into my repository
+          node-version: '14.17.0' 
       - run: node -v
