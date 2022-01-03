@@ -9,7 +9,7 @@ jobs:
       - run: echo "hello world!!"
       - run: echo "this is step no.2"
 # You can have multiple jobs.
-  print-hello-world-2:
+  build-app:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
