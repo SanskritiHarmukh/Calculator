@@ -1,6 +1,13 @@
 name: My First Github Action
 on: [push]
+# It is not compulsary that jobs execute sequentially although array elements will.
 jobs:
+  print-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello world!!"
+      - run: echo "this is step no.2"
+  # You can have muliple jobs in an action 
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
