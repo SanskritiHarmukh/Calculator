@@ -7,7 +7,7 @@ jobs:
     steps:
       - run: echo "hello world!!"
       - run: echo "this is step no.2"
-  # You can have muliple jobs in an action 
+  # You can have multiple jobs in an action 
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
