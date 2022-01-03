@@ -13,5 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: tree
+      - uses: actions/setup-node@v2
+          with: #property
+            node-version: '14.17.0' #I want node 14 cloned into my repository
+      - run: node -v
       
