@@ -1,11 +1,14 @@
 name: My First Github Action
 on: [push]
 jobs:
+# job runs parallely but steps don't.
+# Jobs do not necessarily execute in sequence although array elements(steps) do .
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
       - run: echo "hello world!!"
       - run: echo "this is step no.2"
+# You can have multiple jobs.
   print-hello-world-2:
     runs-on: ubuntu-latest
     steps:
