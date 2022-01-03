@@ -18,6 +18,8 @@ jobs:
         with: 
           # I want node 14 cloned into my repository
           node-version: '14.17.0' 
+      - name: Install node_modules
+        run: yarn
       - name: Build the project
         run: yarn build
       - name: Setup Finish
